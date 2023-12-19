@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+3:wght@300;700&display=swap');
 body {
     background-color:#2D2424;
     font-size: 1.2rem;
@@ -15,11 +16,16 @@ nav {
 }
 nav i{
     position: absolute;
-    top: 1rem;
+    top: .7rem;
     left: 5rem;
     font-size: 3rem;
-    color: #e0dfdd;
+    color: #ff7700af;
+    background-color: #5C3D2E;
     cursor: pointer;
+}
+nav i:hover{
+    color: #ff7700;
+    transform: scale(1.1);
 }
 nav ul {
     list-style-type: none;
@@ -33,11 +39,12 @@ nav ul li {
     margin-right: 1rem;
 }
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 }
 nav ul li a:hover {
-    color: #333;
+    color: #ff7700;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
 }
 main {
     padding: 1rem;
@@ -75,7 +82,7 @@ h1{
 .Ramen-Shop-Text{
     position: absolute;
     object-fit: cover;
-    top:50%;
+    top:40%;
     font-size: 3rem;
     text-shadow: rgb(0, 0, 0) 0px 0px 10px;
     background:#ff7700af;
@@ -84,6 +91,14 @@ h1{
     text-align: center;
     width: 100%;
     
+}
+.ramen-shop-img{
+    width: 100%;
+    height: 600px; /* Adjust this value as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover; /* This will prevent distortion */
 }
 h2 {
     text-align: center;
@@ -104,13 +119,13 @@ p{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1rem;
     justify-content: center;
     
 }
 .menu-item {
     display: flex;
     flex-direction: column;
-    justify-content:normal; 
     align-items: center;
     width: 25%;
     margin-bottom: 4rem;
@@ -121,15 +136,31 @@ p{
     border-radius: 1rem;
     box-shadow: rgb(192, 164, 142) 0px 0px 12px;
 }
-.miso-ramen,
-.Shouyu-ramen,
-.Tonkotsu-ramen {
-    width: 50%;
+.menu-item p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.menu-item img{
+    width: 100%;
     height: 300px; /* Adjust this value as needed */
     display: block;
     margin-left: auto;
     margin-right: auto;
     object-fit: cover; /* This will prevent distortion */
+}
+#order-btn{
+    padding: 1rem;
+    background-color: #2D2424;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    text-shadow: none;
+    cursor: pointer;
+}
+#order-btn:hover{
+    background-color: #1d1613;
 }
 .opening-hours-card {
     display: flex;
@@ -155,25 +186,6 @@ footer {
     text-align: center;
     text-shadow: none;
 }
-/* .box-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-.box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap:1.5rem;
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #5C3D2E;
-    border-radius: .3rem;
-
-} */
 .social-icons {
     display: flex;
     flex-direction: row; /* Add this line */
@@ -188,4 +200,162 @@ footer {
 .social-media li {
     display: inline-block;
     margin-right: 1rem;
+}
+.staff{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #5C3D2E;
+    border-radius: .3rem;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-bottom: 4rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding: 1rem;
+    background-color: #6B240C;
+    border-radius: 1rem;
+    box-shadow: rgb(192, 164, 142) 0px 0px 12px;
+}
+#one{
+    width: 30%;
+    height: 600px; /* Adjust this value as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.ceo-img{
+    width: 100%;
+    height: 100%; /* Adjust this value as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover; /* This will prevent distortion */
+
+}
+.employee-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#two, #three, #four, #five{
+    width: 20%;
+    height: 15rem; /* Adjust this value as needed */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover; /* This will prevent distortion */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #2D2424;
+    border-radius: .3rem;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #ff7700;
+}
+input, textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: larger;
+    background-color: #414141;
+    border:  3px solid #b8b8b8;
+    border-radius: .3rem;
+}
+input:hover, textarea:hover{
+    background-color: #5a5a5a;
+}
+.contact-us{
+    text-align: center;
+    font-size: 1.3rem;
+    text-shadow: rgb(0, 0, 0) 0px 3px 10px;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #ffffff ;
+    margin-bottom: 5rem;
+}
+.Send-btn{
+    padding: 1rem;
+    background-color: #5a5a5a;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    text-shadow: none;
+    cursor: pointer;
+}
+.Send-btn:hover{
+    background-color: #414141;
+}
+
+@media (max-width:1024px){
+    .Ramen-Shop-Text{
+        font-size: 2rem;
+    }
+    .ramen-shop-img{
+        height: 400px;
+    }
+    .menu-item img{
+        height: 200px;
+    }
+    .menu-item{
+        width: 40%;
+    }
+    .opening-hours-card{
+        font-size: 1rem;
+    }
+    .staff{
+        width: 100%;
+    }
+    .col{
+        width: 100%;
+    }
+    #one{
+        width: 100%;
+        height: 200px;
+    }
+    .ceo-img{
+        width: 100%;
+        height: 200px;
+    }
+    #two, #three, #four, #five{
+        width: 100%;
+        height: 100px;
+    }
+    .social-icons{
+        font-size: 1rem;
+    }
+    .footer-text{
+        font-size: 1rem;
+    }
+    .contact-us{
+        font-size: 1rem;
+    }
+    form{
+        font-size: 1rem;
+    }
+    input, textarea{
+        font-size: 1rem;
+    }
 }
