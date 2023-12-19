@@ -1,5 +1,5 @@
 body {
-    background-color:#947865;
+    background-color:#2D2424;
     font-size: 1.2rem;
     line-height: 1.5;
     color: #f7f7f7;
@@ -8,7 +8,7 @@ body {
 }
 nav {
     position: relative;
-    background-color: #4b4237;
+    background-color: #5C3D2E;
     padding: 1rem;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
@@ -49,27 +49,10 @@ main {
     align-items: center;
     margin: 1rem;
     padding: 1rem;
-    background-color: #4b4237;
-    border-radius: 1rem;
+    background-color: #5C3D2E;
+    border-radius: .3rem;
 }
-footer {
-    background-color: #4b4237;
-    padding: 1rem;
-    text-align: center;
-}
-.social-media {
-    display: flex;
-    flex-direction: row; /* Add this line */
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: larger;
-    text-align: center;
-}
-.social-media li {
-    display: inline-block;
-    margin-right: 1rem;
-}
+
 .Ramen-Shop {
     position: relative;
     width: 100%;
@@ -81,12 +64,22 @@ h1{
     font-size: 3rem;
     font-weight: bold;
 }
+.heading-about{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: rgb(0, 0, 0) 0px 3px 10px;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #ffffff ;
+}
 .Ramen-Shop-Text{
     position: absolute;
     object-fit: cover;
     top:50%;
     font-size: 3rem;
-    background:rgba(163, 87, 0, 0.89);
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+    background:#ff7700af;
+    box-shadow: rgb(247, 247, 247) 0px 0px 60px;
     padding:1rem 2rem;
     text-align: center;
     width: 100%;
@@ -112,6 +105,7 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 .menu-item {
     display: flex;
@@ -123,8 +117,9 @@ p{
     margin-left: .5rem;
     margin-right: .5rem;
     padding: 1rem;
-    background-color: #4b4237;
+    background-color: #6B240C;
     border-radius: 1rem;
+    box-shadow: rgb(192, 164, 142) 0px 0px 12px;
 }
 .miso-ramen,
 .Shouyu-ramen,
@@ -141,9 +136,56 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
     padding: 1rem;
     background-color: #947865;
-    border-radius: 1rem;
+    border-radius: .3rem;
     font-size: 1.2rem;
+    text-shadow: none;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #818181;
+    gap: 1rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+.footer-text{
+    text-align: center;
+    text-shadow: none;
+}
+/* .box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #5C3D2E;
+    border-radius: .3rem;
+
+} */
+.social-icons {
+    display: flex;
+    flex-direction: row; /* Add this line */
+    list-style-type: none;
+    gap: 1rem;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+    text-align: center;
+}
+.social-media li {
+    display: inline-block;
+    margin-right: 1rem;
 }
