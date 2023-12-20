@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+3:wght@300;700&display=swap');
+/* Main colors and style */
 body {
     background-color:#2D2424;
     font-size: 1.2rem;
+    font-family: 'Roboto';
     line-height: 1.5;
     color: #f7f7f7;
     margin: 0;
@@ -13,6 +15,8 @@ nav {
     padding: 1rem;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
 }
 nav i{
     position: absolute;
@@ -25,6 +29,7 @@ nav i{
 }
 nav i:hover{
     color: #ff7700;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
     transform: scale(1.1);
 }
 nav ul {
@@ -66,11 +71,6 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
-h1{
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-}
 .heading-about{
     text-align: center;
     font-size: 2rem;
@@ -100,6 +100,12 @@ h1{
     margin-right: auto;
     object-fit: cover; /* This will prevent distortion */
 }
+/* Text styling */
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
 h2 {
     text-align: center;
     padding-top: 3rem;
@@ -115,6 +121,7 @@ p{
     padding: 1rem;
     border-radius: 1rem;
 }
+/* Menu styling */
 #menu-container {
     display: flex;
     flex-direction: row;
@@ -136,6 +143,16 @@ p{
     border-radius: 1rem;
     box-shadow: rgb(192, 164, 142) 0px 0px 12px;
 }
+.menu-title{
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-decoration: underline;
+    text-shadow:#ff7700 0px 0px 20px;
+    border-top: solid 4px #ffffff;
+    border-bottom: solid 4px #ffffff;
+}
 .menu-item p{
     text-align: center;
     font-size: 1.2rem;
@@ -150,17 +167,19 @@ p{
     margin-right: auto;
     margin-bottom: auto;
     object-fit: cover; /* This will prevent distortion */
+    
 }
 #order-btn{
     padding: 1rem;
     background-color: #2D2424;
     border-radius: .3rem;
     font-size: 1.2rem;
-    text-shadow: none;
     cursor: pointer;
 }
 #order-btn:hover{
     background-color: #1d1613;
+    color: white;
+    box-shadow: #ff7700 0px 0px 25px;
 }
 .opening-hours-card {
     display: flex;
@@ -170,9 +189,16 @@ p{
     padding: 1rem;
     background-color: #947865;
     border-radius: .3rem;
-    font-size: 1.2rem;
-    text-shadow: none;
+    padding-bottom: 3rem;
 }
+.opening-hours-card h1{
+    text-decoration: underline;
+}
+.opening-hours-card h2{
+    margin: -.1rem;
+}
+
+/* Footer styling */
 footer {
     display: flex;
     justify-content: center;
@@ -188,7 +214,7 @@ footer {
 }
 .social-icons {
     display: flex;
-    flex-direction: row; /* Add this line */
+    flex-direction: row;
     list-style-type: none;
     gap: 1rem;
     align-self: center;
@@ -201,12 +227,25 @@ footer {
     display: inline-block;
     margin-right: 1rem;
 }
+.social-icons li:hover{
+    color: #ff7700;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+}
+/* --------------------------------------------------- */
+/* Contact us Styling */
+.contact-us{
+    text-align: center;
+    font-size: 1.3rem;
+    text-shadow: rgb(0, 0, 0) 0px 3px 10px;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #ffffff ;
+    margin-bottom: 5rem;
+}
 .staff{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
     margin: 1rem;
     padding: 1rem;
     background-color: #5C3D2E;
@@ -216,30 +255,50 @@ footer {
     display: flex;
     flex-direction: column;
     width: 25%;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
     margin-left: .5rem;
     margin-right: .5rem;
-    padding: 1rem;
+    padding: .8rem;
     background-color: #6B240C;
     border-radius: 1rem;
     box-shadow: rgb(192, 164, 142) 0px 0px 12px;
 }
 #one{
-    width: 30%;
-    height: 600px; /* Adjust this value as needed */
+    width: 40%;
+    height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 
 }
+#two, #three, #four, #five{
+    width: 40%;
+    height: 100%; 
+    display: block;
+    padding-bottom: rem;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    margin-bottom: 8rem;
+}
 .ceo-img{
     width: 100%;
-    height: 100%; /* Adjust this value as needed */
+    height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    object-fit: cover; /* This will prevent distortion */
+    object-fit: cover; 
 
+}
+.Ceo p{
+    text-align: center;
+    margin-top: .5rem;
+}
+.Ceo a{
+    text-align: center;
+    margin-top: .5rem;
+    text-decoration: underline;
+    color: #997c74;
 }
 .employee-img{
     width: 100%;
@@ -249,13 +308,23 @@ footer {
     margin-right: auto;
 
 }
-#two, #three, #four, #five{
-    width: 20%;
-    height: 15rem; /* Adjust this value as needed */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover; /* This will prevent distortion */
+.Employee{
+    text-align: center;
+}
+.Employee p{
+    text-align: center;
+    margin-top: -.1rem;
+}
+.Employee a{
+    text-align: center;
+    margin-top: -.1rem;
+    text-decoration: underline;
+    color: #997c74;
+}
+a:hover{
+    color: #ff7700;
+    text-shadow: rgb(255, 255, 255) 0px 0px 10px;
+
 }
 form{
     display: flex;
@@ -267,14 +336,15 @@ form{
     background-color: #2D2424;
     border-radius: .3rem;
 }
-a{
-    text-decoration: none;
+#contact-form{
+    border: solid 6px #9b9b9b81;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#493a3a;
+    border-radius: 1rem;
 }
-a:hover{
-    text-decoration: underline;
-    color: #ff7700;
-}
-input, textarea{
+#contact-form input, textarea{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -286,17 +356,10 @@ input, textarea{
     border:  3px solid #b8b8b8;
     border-radius: .3rem;
 }
-input:hover, textarea:hover{
+#contact-form input:hover, textarea:hover{
     background-color: #5a5a5a;
 }
-.contact-us{
-    text-align: center;
-    font-size: 1.3rem;
-    text-shadow: rgb(0, 0, 0) 0px 3px 10px;
-    padding-bottom: 3rem;
-    border-bottom: 2px solid #ffffff ;
-    margin-bottom: 5rem;
-}
+
 .Send-btn{
     padding: 1rem;
     background-color: #5a5a5a;
@@ -308,13 +371,120 @@ input:hover, textarea:hover{
 .Send-btn:hover{
     background-color: #414141;
 }
+/* ------------------------------------------------ */
+/* About us page */
+#about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #5c3d2e00;
+    border: solid 4px #9b9b9b81;
+    border-radius: 1rem;
+}
+.about-us-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #807e7d57;
+    border-radius: .3rem;
 
+}
+
+
+/* -------------------------------------- */
+/* Responsive Design */
+@media (max-width:1440px){
+    .Ramen-Shop-Text{
+        font-size: 3rem;
+    }
+    .ramen-shop-img{
+        height: 30rem;
+    }
+    .menu-item img{
+        height: 300px;
+    }
+    .menu-item{
+        width: 40%;
+    }
+    .opening-hours-card{
+        font-size: 1.5rem;
+    }
+    .staff{
+        width: 100%;
+    }
+    .col{
+        width: 100%;
+    }
+    #one{
+        width: 100%;
+        height: 200px;
+    }
+    .ceo-img{
+        width: 100%;
+        height: 200px;
+    }
+    #two, #three, #four, #five{
+        width: 100%;
+        height: 100px;
+    }
+    .social-icons{
+        font-size: 1rem;
+    }
+    .footer-text{
+        font-size: 1rem;
+    }
+    .contact-us{
+        font-size: 1rem;
+    }
+    form{
+        font-size: 1rem;
+    }
+    input, textarea{
+        font-size: 1rem;
+    }
+    .social-icons{
+        font-size: 2rem;
+    }
+    #one{
+        height: 50%;
+        width: 50%;
+    }
+    #two, #three, #four, #five{
+        width: 50%;
+        height: 50%;
+    }
+    .ceo-img{
+        width: 100%;
+        height: 100%;
+    }
+    .employee-img{
+        width: 100%;
+        height: 100%;
+    }
+    textarea{
+        height: 100px;
+        width: 100%;
+    }
+    #contact-form{
+        border: solid 6px #9b9b9b81;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:#493a3a;
+    }
+}
 @media (max-width:1024px){
     .Ramen-Shop-Text{
         font-size: 2rem;
     }
     .ramen-shop-img{
-        height: 400px;
+        height: 20rem;
     }
     .menu-item img{
         height: 200px;
@@ -357,5 +527,153 @@ input:hover, textarea:hover{
     }
     input, textarea{
         font-size: 1rem;
+    }
+    .social-icons{
+        font-size: 2rem;
+    }
+    #one{
+        height: 100%;
+        width: 100%;
+    }
+    #two, #three, #four, #five{
+        width: 100%;
+        height: 100%;
+    }
+    .ceo-img{
+        width: 100%;
+        height: 100%;
+    }
+    .employee-img{
+        width: 100%;
+        height: 100%;
+    }
+    textarea{
+        height: 100%;
+        width: 95%;
+    }
+}
+@media (max-width:768px){
+    .Ramen-Shop-Text{
+        font-size: 1.5rem;
+    }
+    .ramen-shop-img{
+        height: 15rem;
+    }
+    .menu-item img{
+        height: 200px;
+    }
+    .menu-item{
+        width: 40%;
+    }
+    .menu-item p{
+        font-size: .8rem;
+    }
+    .opening-hours-card{
+        font-size: 1rem;
+    }
+    .staff{
+        width: 100%;
+    }
+    .col{
+        width: 100%;
+    }
+    #one{
+        width: 100%;
+        height: 200px;
+    }
+    .ceo-img{
+        width: 100%;
+        height: 200px;
+    }
+    #two, #three, #four, #five{
+        width: 100%;
+        height: 100px;
+    }
+    .social-icons{
+        font-size: 1rem;
+    }
+    .footer-text{
+        font-size: 1rem;
+    }
+    .contact-us{
+        font-size: 1rem;
+    }
+    form{
+        font-size: 1rem;
+    }
+    input, textarea{
+        font-size: 1rem;
+    }
+    .social-icons{
+        font-size: 2rem;
+    }
+    #one{
+        height: 100%;
+        width: 100%;
+    }
+    #two, #three, #four, #five{
+        width: 100%;
+        height: 100%;
+    }
+    .ceo-img{
+        width: 100%;
+        height: 100%;
+    }
+    .employee-img{
+        width: 100%;
+        height: 100%;
+    }
+    textarea{
+        height: 100px;
+        width: 90%;
+    }
+}
+@media (max-width:425px){
+    nav li{
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+    nav i{
+        left: .6rem;
+        top: 1.1rem;
+        font-size: 2rem;
+    }
+    .Ramen-Shop-Text{
+        font-size: 1rem;
+    }
+    .heading-about{
+        font-size: 1.2rem;
+    }
+    .paragraph-about{
+        font-size: .8rem;
+    }
+    .menu-item{
+        width: 100%;
+    }
+    .social-icons{
+        font-size: 2rem;
+    }
+    #one{
+        height: 100%;
+        width: 100%;
+    }
+    #two, #three, #four, #five{
+        width: 100%;
+        height: 100%;
+    }
+    .ceo-img{
+        width: 100%;
+        height: 100%;
+    }
+    .employee-img{
+        width: 100%;
+        height: 100%;
+    }
+    #contact-form{
+        width: 100%;
+    }
+    textarea{
+        height: 100px;
+        width: 90%;
     }
 }
