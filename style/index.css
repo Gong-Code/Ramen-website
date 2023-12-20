@@ -155,8 +155,8 @@ p{
 }
 .menu-item p{
     text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight:100;
     border-radius: 1rem;
 }
 .menu-item img{
