@@ -3,39 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramen</title>
+    <title>Serenity Slurp | Home</title>
     <link rel="stylesheet" href="../style/index.css">
     <link rel="stylesheet" href="../style/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+3:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Main begins -->
     <main>
+
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <i class="fa-solid fa-bowl-food"></i>
+        </nav>
+
         <!-- Landing -->
-        <img src="../images/main-image.jpg" alt="Ramen Shop">
-        <h1>Sip, Slurp, Smile - Stockholm's Ramen Revolution Starts Here!
-            Test
-        </h1>
+        <div class="Ramen-Shop">
+            <img src="../images/main-image.jpg" class="ramen-shop-img" alt="Ramen-Shop">
+            <h1 class="Ramen-Shop-Text">Sip, Slurp, Smile - Stockholm's Ramen Revolution Starts Here!</h1>
+        </div>
+
+        <!-- About the restaurant -->
+        <section id="about-container">
+            <h2 class="heading-about">
+                Welcome to "Serenity Slurp," a whimsical haven nestled in the heart of a bustling city, where the aroma of savory broth and the symphony of slurping transport you to a world of culinary delight.
+            </h2>
+            <p class="paragraph-about">
+                The restaurant's interior is a fusion of modern elegance and traditional Japanese aesthetics, with bamboo accents, paper lanterns casting a warm glow, and a captivating mural that tells the story of a ramen master's journey through the seasons.
+                <br>
+                Serenity Slurp is not just a restaurant; it's a celebration of flavors, a showcase of artistry, and a retreat for those seeking respite from the mundane. Come for the extraordinary ramen, stay for the enchanting ambiance, and leave with a heart warmed by the unique experience that is Serenity Slurp.
+            </p>
+        </section>
 
         <!-- Menu section -->
-        <section id="menu-se">
-            <h2>Menu</h2>
-            <div class="menu-container">
+        <h2 class="menu-title">Menu</h2>
+        <section id="menu-container">
                 <div class="menu-item">
-                    <img src="../images/ramen-1.jpg" alt="Shoyu Ramen">
+                    <img src="../images/ramen-1.jpg" class="Shoyu-Ramen" alt="Shoyu Ramen">
+
                     <h3>Shoyu Ramen</h3>
-                    <p>Shoyu ramen is the most common type of ramen. It has a clear brown broth, based on a chicken and vegetable (or sometimes fish or beef) stock with plenty of soy sauce added resulting in a soup that is tangy, salty, and savory yet still fairly light on the palate.</p>
+                    <h3>醤油ラーメン</h3>
+                    <h3>PRICE: 123 SEK</h3>
+
+                    <p>Shoyu ramen is the most common type of ramen. It has a clear brown broth, based on a chicken and vegetable (or sometimes fish or beef) stock with plenty of soy sauce added resulting in a soup that is tangy, salty, and savory yet still fairly light on the palate. Shoyu ramen is typically topped with menma, green onions, nori, and chashu.</p>
+                    <a href="#"><button id="order-btn">Place Order</button></a>
                 </div>
                 <div class="menu-item">
-                    <img src="../images/ramen-2.jpg" alt="Miso Ramen">
+                    <img src="../images/ramen-2.jpg" class="Miso-Ramen" alt="Miso Ramen">
+
                     <h3>Miso Ramen</h3>
-                    <p>Miso ramen is a relative newcomer, having reached national prominence around 1965. This uniquely Japanese ramen, which was developed in Hokkaido, features a broth that combines copious miso and is blended with oily chicken or fish broth – and sometimes with tonkotsu or lard – to create a thick, nutty, slightly sweet and very hearty soup.</p>
+                    <h3>味噌ラーメン</h3>
+                    <h3>PRICE: 123 SEK</h3>
+
+                    <p>Miso ramen is a relative newcomer, having reached national prominence around 1965. This uniquely Japanese ramen, which was developed in Hokkaido, features a broth that combines copious miso and is blended with oily chicken or fish broth - and sometimes with tonkotsu or lard - to create a thick, nutty, slightly sweet and very hearty soup.</p>
+                    <a href="#"><button id="order-btn">Place Order</button></a>
                 </div>
                 <div class="menu-item">
-                    <img src="../images/ramen-3.jpg" alt="Miso Ramen">
+                    <img src="../images/ramen-3.jpg" Class="Tonkotsu-Ramen" alt="Tonkotsu Ramen">
+
                     <h3>Tonkotsu Ramen</h3>
+                    <h3>豚骨ラーメン</h3>
+                    <h3>PRICE: 123 SEK</h3>
+
                     <p>Tonkotsu ramen usually has a cloudy white colored broth. It is similar to the Chinese baitang and has a thick broth made from boiling pork bones, fat, and collagen over high heat for many hours, which suffuses the broth with a hearty pork flavor and a creamy consistency that rivals milk, melted butter or gravy (depending on the shop).</p>
+                    <a href="#"><button id="order-btn">Place Order</button></a>
                 </div>
+                <div class="menu-item">
+                    <img src="../images/ramen-4.jpg" class="Shoyu-Ramen" alt="Shoyu Ramen">
+
+                    <h3>Spicy miso Ramen</h3>
+                    <h3>辛味噌ラーメン</h3>
+                    <h3>PRICE: 123 SEK</h3>
+
+                    <p>Spicy Miso Ramen features a thick, yellow broth made from a soybean-based miso paste, offering a rich and savory flavor. This type of ramen is typically served with thicker noodles and a loose boiled egg, along with other toppings such as beef or pork, green onions, and sometimes mushrooms. The addition of spicy elements enhances the flavor profile of the dish, providing a satisfying and comforting meal</p>
+                    <a href="#"><button id="order-btn">Place Order</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/ramen-5.jpg" class="Tokyo Ramen" alt="Tokyo Ramen">
+
+                    <h3>Shio Ramen</h3>
+                    <h3>塩ラーメン</h3>
+                    <h3>PRICE: 123 SEK</h3>
+
+                    <p>Shio Ramen is a popular and common type of ramen in Japan. It is made from a delicate chicken-based broth with a muted salty flavor, providing a delicious and light soup. The name "shio" comes from the Japanese word for salt, as salt is added to the chicken soup and dashi base to create the distinctive flavor. This ramen is often topped with simple ingredients such as bamboo shoots, sliced chashu (chicken or pork), and eggs.</p>
+                    <a href="#"><button id="order-btn">Place Order</button></a>
+                </div>
+                <div class="menu-item">
+                    <img src="../images/ramen-6.jpg" Class="Tonkotsu-Ramen" alt="Tonkotsu Ramen">
+
+                    <h3>Tsukemen Ramen</h3>
+                    <h3>つけ麺ラーメン</h3>
+                    <h3>PRICE: 123 SEK</h3>
+
+                    <p>Tsukemen is a type of ramen dish in Japanese cuisine where the noodles are typically served cold, while the soup is typically served hot, which serves to season and moisten the noodles. The soup base is usually thicker and more concentrated than ramen so it sticks to the noodles. The toppings are typically served atop or on the side within the dish of soup, such as nori, chashu, menma, tamago, and eggs.</p>
+                    <a href="#"><button id="order-btn">Place Order</button></a>
+                </div>
+        </section>
+
+        <!-- Opening Hours section -->
+        <section id="opening-hours-container">
+            <div class="opening-hours-card">
+                <h1>Opening Hours</h1>
+                <h2>10:00 - 22:00</h2>
+                <h2>Monday - Sunday</h2>
             </div>
         </section>
     </main>
+    <!-- End of main -->
+
+    <!-- Footer begins -->
+    <footer id="footer">
+        <h2 class="footer-text">Get in Touch!</h2>
+        <ul class="social-icons">
+            <li><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram" aria-label="Instagram"></i></a></li>
+            <li><a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter" aria-label="X/Twitter"></i></a></li>
+            <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook" aria-label="Facebook"></i></a></li>
+        </ul>
+    </footer>
+
+
 </body>
 </html>
