@@ -248,7 +248,7 @@ footer {
     justify-content: center;
     margin: 1rem;
     padding: 1rem;
-    background-color: #5C3D2E;
+    background-color: #493a3a;
     border-radius: .3rem;
 }
 .col{
@@ -259,7 +259,7 @@ footer {
     margin-left: .5rem;
     margin-right: .5rem;
     padding: .8rem;
-    background-color: #6B240C;
+    background-color: #221f1d;
     border-radius: 1rem;
     box-shadow: rgb(192, 164, 142) 0px 0px 12px;
 }
@@ -628,15 +628,31 @@ form{
         width: 90%;
     }
 }
-@media (max-width:425px){
-    nav li{
-        font-size: 1rem;
-        margin-left: 2rem;
-    }
+@media (max-width:588px){
     nav i{
-        left: .6rem;
+        left: 2rem;
         top: 1.1rem;
         font-size: 2rem;
+    
+    }
+}
+@media (max-width:470px){
+    nav i{
+        font-size: 2rem;
+        left: 1rem;
+        top:1.1rem;
+    
+    }
+}
+@media (max-width:425px){
+    nav li{
+        font-size: 1.2rem;
+        margin-left: 4rem;
+    }
+    nav i{
+        left: 1.5rem;
+        top: 2rem;
+        font-size: 3rem;
     }
     .Ramen-Shop-Text{
         font-size: 1rem;
@@ -675,5 +691,38 @@ form{
     textarea{
         height: 100px;
         width: 90%;
+    }
+}
+@media(max-width:383px){
+    nav i{
+        font-size: 2.5rem;
+        left:2rem;
+        top: 2rem;
+    }
+    nav li{
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+}
+@media(max-width:365px){
+    nav i{
+        font-size: 2.5rem;
+        left:1rem;
+        top: 2rem;
+    }
+    nav li{
+        font-size: 1.4rem;
+        margin-left: 2rem;
+    }
+}
+@media(max-width:300px){
+    nav i{
+        font-size: 2rem;
+        left:1rem;
+        top: 3.4rem;
+    }
+    nav li{
+        font-size: 1.4rem;
+        margin-left: 2rem;
     }
 }
